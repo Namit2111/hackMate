@@ -1,12 +1,17 @@
 import "./App.css";
-import AuroraHero from "./Components/AuroraHero";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/landingPage";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <div className="app h-screen w-screen">
-        <AuroraHero />
-      </div>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+        </Routes>
+      </Router>
     </>
   );
 }

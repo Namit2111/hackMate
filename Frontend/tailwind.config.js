@@ -3,16 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        "custom-mono": [
-          "ui-monospace",
-          "Cascadia Code",
-          "Source Code Pro",
-          "Menlo",
-          "Consolas",
-          "DejaVu Sans Mono",
-          "monospace",
-        ],
+      colors: {
+        customGray: "#f6f6f6",
+        customWhite: "#fff",
+        customBlack: "#171717",
+        customGrayTwo: "#797979",
       },
     },
   },
